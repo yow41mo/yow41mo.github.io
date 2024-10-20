@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komentar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Komentar</h1>
+        </header>
+        <div class="row">
+            <nav class="col-md-3 sidebar bg-light">
+                <h5>Menu</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html">Komentar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html">Karya</a></li>
+                </ul>
+            </nav>
+            <main class="col-md-9">
+            <p>Silahkan berikan pendapat anda terkait karya dari <b>Makoto Shinkai</b> yang anda sukai !</p>
+                <form action="table.html" method="GET" class="my-4">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Tanggal Lahir:</label>
+                        <input type="date" id="birthdate" name="birthdate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <div>
+                            <label><input type="radio" name="gender" value="male" required> Laki-laki</label>
+                            <label><input type="radio" name="gender" value="female"> Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="favoriteTitle">Judul Favorit:</label>
+                        <select id="favoriteTitle" name="favoriteTitle" class="form-control" required>
+                            <option value="" disabled selected>Pilih judul</option>
+                            <option value="5 Centimeters Per Second">5 Centimeters Per Second</option>
+                            <option value="The Garden of Words">The Garden of Words</option>
+                            <option value="Your Name">Your Name</option>
+                            <option value="Weathering with You">Weathering with You</option>
+                            <option value="Suzume no Tojimari">Suzume no Tojimari</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Alasan:</label>
+                        <textarea id="reason" name="reason" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>
+            </main>
+        </div>
+        <footer class="text-end mt-4">
+            <h6>Sosial media</h6>
+            <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com/cwfilms/?locale=id_ID" target="_blank" class="text-white"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="https://x.com/shinkaimakoto" target="_blank" class="text-white"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/makoto.shinkai/" target="_blank" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
